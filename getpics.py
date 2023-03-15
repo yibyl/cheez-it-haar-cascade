@@ -1,4 +1,4 @@
-# Gets the negative images
+# Gets the all pics images
 
 import requests
 from bs4 import BeautifulSoup
@@ -27,7 +27,7 @@ for x in range(11):
 
 def saveimg(imgurl, num):
     img_data = requests.get(imgurl).content
-    with open('negative/' + str(num) + '.jpg', 'wb') as handler:
+    with open('all pics/' + str(num) + '.jpg', 'wb') as handler:
         handler.write(img_data)
 
 
