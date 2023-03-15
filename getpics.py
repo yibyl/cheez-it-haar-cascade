@@ -27,8 +27,8 @@ for x in range(11):
 
 def saveimg(imgurl, num):
     img_data = requests.get(imgurl).content
-    with open('all pics/' + str(num) + '.jpg', 'wb') as handler:
-        handler.write(img_data)
+    with open('all pics/' + str(num) + '.jpg', 'wb') as f:
+        f.write(img_data)
 
 
 
