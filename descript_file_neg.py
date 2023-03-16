@@ -3,6 +3,7 @@ import os
 for ftype in ['negative']:
     for img in os.listdir(ftype):
         if ftype == 'negative':
-            line = ftype + '/'+ img + '\n'
-            with open('bg.txt', 'a') as f:
+            line = "cheez-it-haar-cascade/" + ftype + '/' + img + '\n'
+            with open('bg1.txt', 'a') as f:
                 f.write(line)
+                f.write("\n")
