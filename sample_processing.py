@@ -10,5 +10,4 @@ def pros(num):
         pass
 
 
-for i in range(5):
-    pros(i)
+pros(5)

@@ -1,15 +1,16 @@
 import cv2
 
 
-
-def grays(num):
+c = 0
+def grays(num, c):
     try:
         img = cv2.imread("all pics/" + str(num) + ".jpg", cv2.IMREAD_GRAYSCALE)
         resized = cv2.resize(img, (100, 100))
-        cv2.imwrite("negative/" + str(num) + ".jpg", resized)
+        cv2.imwrite("neg1/" + str(1000 + num + c) + ".jpg", resized)
+        return 0
     except:
-        pass
+        return -1
 
 
 for i in range(1085):
-    grays(i)
+    c += grays(i, c)
